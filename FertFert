@@ -6266,16 +6266,5 @@ task.spawn(function()
 
 	task.spawn(function()
 		setfpscap(999)
-
-local AbyssNotif = loadstring(game:HttpGet("https://raw.githubusercontent.com/Bemey99/GigaNigga/main/WithALongDick"))();
-local Notify = AbyssNotif.Notify;
-Notify({
-Description = "Made By @jdjcxbdnfnfn on dis";
-Title = "AbyssSploit";
-Duration = 50000000;
-});
-Notify({Title = "Updated!";
-Duration = 30;
-});
 	end)
 end) 
