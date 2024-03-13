@@ -6190,8 +6190,7 @@ task.spawn(function()
 				end
 
 				if Message:lower() == "!test default" and v.Name == Owner and LocalPlayer.Name ~= Owner then
-					task.spawn(function()
-						game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer('Test', 'All');
+game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer('Test', 'All');
 						end
 					end)
 				end
