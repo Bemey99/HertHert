@@ -107,7 +107,7 @@ local function CreateTab(Name)
 
 	Tab.Name = "Tab"
 	Tab.Parent = ContainerFrame
-	Tab.BackgroundColor3 = Color3.new(0, 0, 0)
+	Tab.BackgroundColor3 = Color3.new(170, 0, 255)
 	Tab.BorderColor3 = Color3.new(170, 0, 255)
 	Tab.BorderSizePixel = 0
 	Tab.Position = UDim2.new(0.434123844, 0, 0, 0)
@@ -199,7 +199,7 @@ local function CreateToggle(Parent, Name, DefaultValue, CallBack)
 	Toggle.AutoButtonColor = false
 	Toggle.Font = Enum.Font.GothamBold
 	Toggle.Text = Name
-	Toggle.TextColor3 = Color3.new(255, 255, 255)
+	Toggle.TextColor3 = Color3.new(255, 0, 0)
 	Toggle.TextSize = 12.000
 	Toggle.TextXAlignment = Enum.TextXAlignment.Left
 	Toggle.LayoutOrder = DefaultLayoutOrder + 10
