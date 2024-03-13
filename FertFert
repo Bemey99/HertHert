@@ -108,7 +108,7 @@ local function CreateTab(Name)
 	Tab.Name = "Tab"
 	Tab.Parent = ContainerFrame
 	Tab.BackgroundColor3 = Color3.new(0, 0, 0)
-	Tab.BorderColor3 = Color3.new(0, 0, 0)
+	Tab.BorderColor3 = Color3.new(170, 0, 255)
 	Tab.BorderSizePixel = 0
 	Tab.Position = UDim2.new(0.434123844, 0, 0, 0)
 	Tab.Size = UDim2.new(0.142, 0, 0.049, 0)
