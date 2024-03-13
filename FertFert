@@ -3256,10 +3256,12 @@ task.spawn(function()
 		local OldReach = CombatConstant.RAYCAST_SWORD_CHARACTER_DISTANCE
 
 		if Settings.Reach.Value == true then
+                CreateNotification(5, "Reach Disabled!")
 			CombatConstant.RAYCAST_SWORD_CHARACTER_DISTANCE = 20
 		end
 
 		if Settings.Reach.Value == false then
+                CreateNotification(5, "Reach Enabled!")
 			CombatConstant.RAYCAST_SWORD_CHARACTER_DISTANCE = OldReach
 		end
 	end)
@@ -4164,7 +4166,7 @@ task.spawn(function()
 end)
 
 task.spawn(function()
-	local Fly, DropDownButton, LayoutOrder, UIGradient = CreateToggle(BlatantTab, "Fly", Settings.Fly.Value, function(CallBack)
+	local Fly, DropDownButton, LayoutOrder, UIGradient = CreateToggle(BlatantTab, "HoverFly", Settings.Fly.Value, function(CallBack)
 		Settings.Fly.Value = CallBack
 
 		task.spawn(function()
@@ -6261,7 +6263,9 @@ task.spawn(function()
 	end)
 
 	task.spawn(function()
-		CreateNotification(5, "AbyssSploit has loaded!")
+		CreateNotification(60, "AbyssSploit has loaded!")
+                CreateNotification(10, "Its Just A Modded GodSploit Brah.")
+                CreateNotification(1000, "Not Mine! MODDED")
 	end)
 
 	task.spawn(function()
