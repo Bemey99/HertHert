@@ -3218,10 +3218,12 @@ task.spawn(function()
 					Settings.Aimbot.Value = not Settings.Aimbot.Value
 
 					if Settings.Aimbot.Value == true then
+                                        CreateNotification(5, "Aimbot Enabled!")
 						UIGradient.Color =  ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.new(1, 0.666667, 0)), ColorSequenceKeypoint.new(1.00, Color3.new(1, 0.803922, 0.411765))}
 					end
 
 					if Settings.Aimbot.Value == false then
+                                        CreateNotification(5, "Aimbot Disabled!")
 						UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.new(1, 1, 1)), ColorSequenceKeypoint.new(1.00, Color3.new(1, 1, 1))}
 					end
 				end
@@ -3256,12 +3258,12 @@ task.spawn(function()
 		local OldReach = CombatConstant.RAYCAST_SWORD_CHARACTER_DISTANCE
 
 		if Settings.Reach.Value == true then
-                CreateNotification(5, "Reach Disabled!")
+                CreateNotification(5, "Reach Enabled!")
 			CombatConstant.RAYCAST_SWORD_CHARACTER_DISTANCE = 20
 		end
 
 		if Settings.Reach.Value == false then
-                CreateNotification(5, "Reach Enabled!")
+                CreateNotification(5, "Reach Disabled!")
 			CombatConstant.RAYCAST_SWORD_CHARACTER_DISTANCE = OldReach
 		end
 	end)
