@@ -199,7 +199,7 @@ local function CreateToggle(Parent, Name, DefaultValue, CallBack)
 	Toggle.AutoButtonColor = false
 	Toggle.Font = Enum.Font.GothamBold
 	Toggle.Text = Name
-	Toggle.TextColor3 = Color3.new(255, 0, 0)
+	Toggle.TextColor3 = Color3.new(255, 255, 255)
 	Toggle.TextSize = 12.000
 	Toggle.TextXAlignment = Enum.TextXAlignment.Left
 	Toggle.LayoutOrder = DefaultLayoutOrder + 10
