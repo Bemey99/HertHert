@@ -148,7 +148,7 @@ local function CreateTab(Name)
 	Title.Size = UDim2.new(0.99999994, 0, 0.742857158, 0)
 	Title.Font = Enum.Font.GothamBold
 	Title.Text = Name
-	Title.TextColor3 = Color3.fromHSV(tick() % 5 / 5, 1, 1)
+	Title.TextColor3 = Color3.new(255, 0, 0)
 	Title.TextSize = 17
 	Title.TextWrapped = true
 
@@ -255,7 +255,7 @@ local function CreateKeyBind(Parent, DefaultValue, LayoutOrder, CallBack)
 	KeyBind.AutoButtonColor = false
 	KeyBind.Font = Enum.Font.GothamBold
 	KeyBind.Text = "KeyBind: " .. DefaultValue
-	KeyBind.TextColor3 = Color3.fromHSV(tick() % 5 / 5, 1, 1)
+	KeyBind.TextColor3 = Color3.new(255, 0, 0)
 	KeyBind.TextSize = 11.000
 	KeyBind.LayoutOrder = LayoutOrder
 
@@ -404,7 +404,7 @@ local function CreateSlider(Parent, Name, DefaultValue, MaximumValue, LayoutOrde
 	Bar.AutoButtonColor = false
 	Bar.Font = Enum.Font.SourceSans
 	Bar.Text = ""
-	Bar.TextColor3 = Color3.new(0, 0, 0)
+	Bar.TextColor3 = Color3.new(255, 0, 0)
 	Bar.TextSize = 14.000
 
 	UICorner_2.CornerRadius = UDim.new(0, 12)
@@ -428,7 +428,7 @@ local function CreateSlider(Parent, Name, DefaultValue, MaximumValue, LayoutOrde
 	Title.Size = UDim2.new(0.357142866, 0, 2.5, 0)
 	Title.Font = Enum.Font.GothamBold
 	Title.Text = Name .. ": " .. DefaultValue
-	Title.TextColor3 = Color3.new(255, 255, 255)
+	Title.TextColor3 = Color3.new(255, 0, 0)
 	Title.TextSize = 11.00
 
 	UIGradient_2.Color =  ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.new(1, 0.666667, 0)), ColorSequenceKeypoint.new(1.00, Color3.new(1, 0.803922, 0.411765))}
