@@ -1614,30 +1614,30 @@ end
 
 local function ChatSpam()
 	local Randomized = math.random(0, 5)
-	local KillMessage = ""
+	local KillMessage = "🤣🤣 Bad | AbyssSploit On Top"
 
 	if Randomized == 0 then
-		KillMessage = "GodSploit does more updates than Bedwars 💀. | GodSploit On Top"
+		KillMessage = "АbуѕѕЅрlоit dоеѕ mоrе uрdаtеѕ thаn Веdwаrѕ 💀 | АbуѕѕЅрlоit Оn Тор"
 	end
 
 	if Randomized ~= 0 then
-		KillMessage = "SkidB4 is as bad as how you felt when your dad left you. | GodSploit On Top"
+		KillMessage = "ЅkіdВ4 іѕ аѕ bаd аѕ Ѕhаrkbоу аnd Lаvаgіrl СGІ | АbуѕѕЅрlоit Оn Тор"
 	end
 
 	if Randomized == 2 then
-		KillMessage = "Switch to GodSploit, ez wins. | GodSploit On Top"
+		KillMessage = "ѕwіtсh tо АbуѕѕЅрlоit, еz wіnѕ | АbуѕѕЅрlоit Оn Тор"
 	end
 
 	if Randomized == 3 then
-		KillMessage = "I am not cheating, my gaming chair is. | GodSploit On Top"
+		KillMessage = "ЅWІТСН ТО АВYЅЅЅРLОIТ NОW | АbуѕѕЅрlоit Оn Тор"
 	end
 
 	if Randomized == 4 then
-		KillMessage = "3 years now, and the anticheat is still the same. | GodSploit On Top"
+		KillMessage = "'Ѕwеаtѕ' іn bеdwаrѕ аrе just 9уr оldѕ wіth nо lіfе | АbуѕѕЅрlоit Оn Тор"
 	end
 
 	if Randomized == 5 then
-		KillMessage = "Kids in bedwars just keep getting worst. | GodSploit On Top"
+		KillMessage = "АbуѕѕЅрlоit Оn Тор | Веѕt іn thе Wоrld"
 	end
 
 	SendChatMessage(KillMessage)
