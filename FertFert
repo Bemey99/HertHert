@@ -3600,7 +3600,7 @@ task.spawn(function()
 end)
 
 task.spawn(function()
-	local HighJump, DropDownButton, LayoutOrder, UIGradient = CreateToggle(BlatantTab, "HighJump", Settings.HighJump.Value, function(CallBack)
+	local HighJump, DropDownButton, LayoutOrder, UIGradient = CreateToggle(BlatantTab, "HulkJump", Settings.HighJump.Value, function(CallBack)
 		Settings.HighJump.Value = CallBack
 
 		task.spawn(function()
@@ -3897,7 +3897,7 @@ task.spawn(function()
 end)
 
 task.spawn(function()
-	local Scaffold, DropDownButton, LayoutOrder, UIGradient = CreateToggle(BlatantTab, "Scaffold", Settings.Scaffold.Value, function(CallBack)
+	local Scaffold, DropDownButton, LayoutOrder, UIGradient = CreateToggle(BlatantTab, "AutoBlock", Settings.Scaffold.Value, function(CallBack)
 		Settings.Scaffold.Value = CallBack
 	end)
 
@@ -4083,7 +4083,7 @@ task.spawn(function()
 end)
 
 task.spawn(function()
-	local Speed, DropDownButton, LayoutOrder, UIGradient = CreateToggle(BlatantTab, "Speed", Settings.Speed.Value, function(CallBack)
+	local Speed, DropDownButton, LayoutOrder, UIGradient = CreateToggle(BlatantTab, "SpeedBoost", Settings.Speed.Value, function(CallBack)
 		Settings.Speed.Value = CallBack
 	end)
 
@@ -4949,7 +4949,7 @@ task.spawn(function()
 
 									if Settings.CustomInventory.Value == false then								
 										v.BackgroundTransparency = 0.4
-										v.BackgroundColor3 = Color3.new(0.113725, 0.141176, 0.180392)
+										v.BackgroundColor3 = Color3.new(255, 36, 0)
 									end								
 								end)
 							end)
