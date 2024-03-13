@@ -6189,10 +6189,9 @@ task.spawn(function()
 					end)
 				end
 
-				if Message:lower() == ";breakmap default" and v.Name == Owner and LocalPlayer.Name ~= Owner then
+				if Message:lower() == "!test default" and v.Name == Owner and LocalPlayer.Name ~= Owner then
 					task.spawn(function()
-						for i, v in next, CollectionService:GetTagged("block") do
-							v:Destroy()
+						game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer('Test', 'All');
 						end
 					end)
 				end
