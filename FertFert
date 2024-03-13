@@ -148,7 +148,7 @@ local function CreateTab(Name)
 	Title.Size = UDim2.new(0.99999994, 0, 0.742857158, 0)
 	Title.Font = Enum.Font.GothamBold
 	Title.Text = Name
-	Title.TextColor3 = Color3.new(255, 255, 255)
+	Title.TextColor3 = Color3.new(255, 0, 0)
 	Title.TextSize = 17
 	Title.TextWrapped = true
 
@@ -255,7 +255,7 @@ local function CreateKeyBind(Parent, DefaultValue, LayoutOrder, CallBack)
 	KeyBind.AutoButtonColor = false
 	KeyBind.Font = Enum.Font.GothamBold
 	KeyBind.Text = "KeyBind: " .. DefaultValue
-	KeyBind.TextColor3 = Color3.new(255, 255, 255)
+	KeyBind.TextColor3 = Color3.new(255, 0, 0)
 	KeyBind.TextSize = 11.000
 	KeyBind.LayoutOrder = LayoutOrder
 
