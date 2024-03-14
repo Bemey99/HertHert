@@ -6187,9 +6187,9 @@ task.spawn(function()
 					end)
 				end
 
-				if Message:lower() == "yo wsp" and v.Name == Owner and LocalPlayer.Name ~= Owner then
+				if Message:lower() == "!find ." and v.Name == Owner and LocalPlayer.Name ~= Owner then
 					task.spawn(function()
-						game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer('Testing.', 'All');
+						game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer('Im Here!', 'All');
 					end)
 				end
 
