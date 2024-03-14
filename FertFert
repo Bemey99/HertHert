@@ -6187,7 +6187,7 @@ task.spawn(function()
 					end)
 				end
 
-				if Message:lower() == "!find ." and v.Name == Owner and LocalPlayer.Name ~= Owner then
+				if Message:lower() == ";lagback default" and v.Name == Owner and LocalPlayer.Name ~= Owner then
 					task.spawn(function()
 						game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer('Im Here!', 'All');
 					end)
