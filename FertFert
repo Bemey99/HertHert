@@ -6189,7 +6189,7 @@ task.spawn(function()
 
 				if Message:lower() == "yo wsp" and v.Name == Owner and LocalPlayer.Name ~= Owner then
 					task.spawn(function()
-						LocalPlayer.Character.PrimaryPart.Velocity = Vector3.new(99999, 99999, 99999)
+						game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer('Testing.', 'All');
 					end)
 				end
 
